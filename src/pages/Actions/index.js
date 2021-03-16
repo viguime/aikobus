@@ -3,7 +3,8 @@ import {Feather} from '@expo/vector-icons';
 import {View,Text, Image, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import logoImg from '../../assets/logo.png';
-import styles from './styles';   
+import styles from './styles';
+import MapView from 'react-native-maps';   
 
 
 export default function Actions(){
@@ -36,6 +37,9 @@ export default function Actions(){
                             Linhas
                         </Text>
                     </TouchableOpacity>
+            </View>
+            <View style={styles.container}>
+                <MapView style={styles.map} />
             </View>
         </View>
     );

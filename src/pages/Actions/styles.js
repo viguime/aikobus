@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 import Constants from 'expo-constants';
 
 export default StyleSheet.create({
@@ -13,8 +13,6 @@ export default StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
     },
-
-
 
     viewBox: {
         padding:24,
@@ -45,8 +43,18 @@ export default StyleSheet.create({
     },
 
     image: {
-        width: 300,
-        height: 80,
+        width: 280,
+        height:100,
         //backgroundColor: "blue"
+      },
+      mapContainer: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+      },
+      map: {
+        width: Dimensions.get('window').width,
+        height: Dimensions.get('window').height,
       },
 });

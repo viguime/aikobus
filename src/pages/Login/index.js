@@ -4,12 +4,11 @@ import {View,Text, Image, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import logoImg from '../../assets/logo.png';
 import styles from './styles';
-
-import api from '../../services/api.js';
 import { useState } from 'react';
 
-const accessToken = 'fe92d05519def5aaac5c10ab91a3ebd8a2b02df86a2d53cf28d252d8a10760a8';
+import api from '../../services/api.js';
 
+const accessToken = 'fe92d05519def5aaac5c10ab91a3ebd8a2b02df86a2d53cf28d252d8a10760a8';
 
 export default function Login(){
 
@@ -32,7 +31,6 @@ export default function Login(){
         });
 
     }
-    
 
     return(
         <View style = {styles.container}>
