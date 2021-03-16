@@ -47,14 +47,15 @@ export default StyleSheet.create({
         height:100,
         //backgroundColor: "blue"
       },
-      mapContainer: {
-        flex: 1,
+
+    mapContainer: {
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
       },
-      map: {
-        width: Dimensions.get('window').width,
-        height: Dimensions.get('window').height,
+      
+    map: {
+        paddingHorizontal: 190,
+        height: 450
       },
 });

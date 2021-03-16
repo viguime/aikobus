@@ -38,8 +38,16 @@ export default function Actions(){
                         </Text>
                     </TouchableOpacity>
             </View>
-            <View style={styles.container}>
-                <MapView style={styles.map} />
+            <View style={styles.mapContainer}>
+                <MapView
+                style={styles.map} 
+                initialRegion={{
+                    latitude: -23.5489,
+                    longitude: -46.6388,
+                    latitudeDelta: 0.1000,
+                    longitudeDelta: 0.0800,
+                  }}
+                />
             </View>
         </View>
     );
