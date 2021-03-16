@@ -37,8 +37,8 @@ export default StyleSheet.create({
     },
 
     image: {
-        width: 300,
-        height: 80,
+        width: 320,
+        height: 110,
         //backgroundColor: "blue"
       },
 });
